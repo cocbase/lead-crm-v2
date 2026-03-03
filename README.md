@@ -1,44 +1,77 @@
-# ✅ All Docker Files Removed
+# LeadCRM - Education Lead Management System
 
-Your LeadCRM project is now completely clean - all Docker files have been removed.
+A modern CRM application for managing student leads, built with React, TypeScript, and Supabase.
 
-## Project Status: Clean ✓
+## Features
 
-- ✅ No Dockerfile
-- ✅ No docker-compose.yml  
-- ✅ No nginx.conf
-- ✅ No Docker scripts
-- ✅ No Docker documentation
-- ✅ Clean package.json (only `build` script)
+- Lead Management - Track student inquiries with detailed profiles
+- Pipeline View - Drag-and-drop Kanban board for lead progression
+- Follow-ups - Schedule and manage follow-up tasks
+- Real-time Notifications - In-app notification system
+- Reports & Analytics - Visual charts and performance metrics
+- User Management - Role-based access control
 
-## How to Use Your Project
+## Tech Stack
 
-### Development
+- Frontend: React 18, TypeScript, Vite
+- Styling: TailwindCSS v4
+- UI Components: Radix UI, shadcn/ui
+- Animations: Framer Motion
+- Charts: Recharts
+- Database: Supabase (PostgreSQL)
+- State Management: React Context API
+
+## Getting Started
+
+### Installation
+
 ```bash
 npm install
+```
+
+### Development
+
+```bash
 npm run dev
 ```
+
 Opens at: `http://localhost:5173`
 
-### Production Build
+### Demo Login
+
+- Email: admin@leadcrm.edu
+- Password: any password (demo mode)
+
+## Project Structure
+
+```
+lead-crm-v2/
+├── src/
+│   ├── app/
+│   │   ├── components/     # Reusable components
+│   │   ├── context/        # React Context (AppContext)
+│   │   ├── layouts/        # Layout components
+│   │   ├── pages/          # Page components
+│   │   └── routes.ts       # React Router config
+│   ├── styles/             # Global styles
+│   └── main.tsx            # App entry point
+├── public/                 # Static assets
+└── package.json
+```
+
+## Deployment
+
+Build for production:
+
 ```bash
 npm run build
 ```
-Output: `/dist` folder
 
-### Deploy
-Works with any static hosting:
-- **Vercel**: `vercel` (auto-detects Vite)
-- **Netlify**: `netlify deploy --prod`
-- **Any CDN**: Upload the `/dist` folder
+Deploy the `/dist` folder to any static hosting:
+- Vercel
+- Netlify
+- Cloudflare Pages
 
-## Project Structure
-```
-lead-crm-v2/
-├── src/app/          # React app code
-├── src/styles/       # CSS files
-├── package.json      # Dependencies
-└── vite.config.ts    # Vite config
-```
+## License
 
-That's it! Simple and clean. 🎉
+MIT
